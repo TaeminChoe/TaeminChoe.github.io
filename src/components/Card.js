@@ -6,7 +6,7 @@ const CardCotainer = styled.div`
   color: black;
   padding: 10px;
   border-radius: 10px;
-  border: 5px solid black;
+  border: 1px solid black;
   box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
   transition: 200ms;
   width: 200px;

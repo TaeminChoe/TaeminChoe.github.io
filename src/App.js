@@ -7,8 +7,6 @@ import AboutMe from "./pages/aboutMe/AboutMe";
 import Skills from "./pages/skills/Skills";
 import Projects from "./pages/projects/Projects";
 import Career from "./pages/career/Career";
-import Activity from "./pages/activity/Activity";
-import Archiving from "./pages/archiving/Archiving";
 import Footer from "./pages/footer/Footer";
 
 const AppContainer = styled.div`
@@ -17,8 +15,8 @@ const AppContainer = styled.div`
   font-family: "Source Sans Pro", sans-serif;
   color: #eeeeee;
   & > div:nth-child(n + 2) {
-    padding: 0 100px;
-    height: 80vh;
+    padding: 0 300px;
+    /* height: 80vh; */
   }
 
   h1 {
@@ -35,8 +33,6 @@ function App() {
       <Skills />
       <Projects />
       <Career />
-      <Activity />
-      <Archiving />
       <Footer />
     </AppContainer>
   );

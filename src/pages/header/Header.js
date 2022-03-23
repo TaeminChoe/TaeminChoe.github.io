@@ -61,12 +61,15 @@ const Icons = styled.ul`
   }
 `;
 
+const scrollIndex = [0, 323, 323, 200, 300, 400, 500];
+
 const Header = () => {
   const handleOnClick = (e) => {
     const id = Number(e.target.id);
     const height = window.innerHeight;
     window.scroll({
-      top: id * height * 0.8,
+      top: scrollIndex[id],
+      // top: id * height * 0.8,
       left: 0,
       behavior: "smooth",
     });

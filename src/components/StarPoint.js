@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
+import {
+  faStarHalfStroke,
+  faStar as faStarEmpty,
+} from "@fortawesome/free-regular-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
-  * {
-    margin-right: 5px !important;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .spinner {
     animation: spin infinite 5s linear;
   }
@@ -21,27 +24,31 @@ const Container = styled.div`
   }
 `;
 
-const StarPoint = ({ score = 0 }) => {
-  console.log("score", score);
-
+const StarPoint = ({ score = 0, color = "white", visible = "hidden" }) => {
   const getStars = () => {
     const star = Array.from({ length: Math.floor(score) }).fill("star");
-    const half = score % 1 === 0.5;
+    const half = score % 1 === 0 ? ["empty"] : ["half"];
 
-    if (half) return [...star, "half"];
-    else return star;
+    let stars = star.concat(half);
+    if (stars.length < 5) {
+      stars = stars.concat(
+        Array.from({ length: 5 - stars.length }).fill("empty")
+      );
+    }
+
+    return stars;
   };
 
   return (
-    <Container>
+    <Container style={{ visibility: visible }}>
       {getStars().map((value, index) => {
         if (value === "star") {
           return (
             <FontAwesomeIcon
               key={`star_${index}`}
               icon={faStar}
-              size="2x"
               className="spinner"
+              color={color}
             />
           );
         } else if (value === "half") {
@@ -49,8 +56,17 @@ const StarPoint = ({ score = 0 }) => {
             <FontAwesomeIcon
               key={`star_${index}`}
               icon={faStarHalfStroke}
-              size="2x"
               className="spinner"
+              color={color}
+            />
+          );
+        } else if (value === "empty") {
+          return (
+            <FontAwesomeIcon
+              key={`star_${index}`}
+              icon={faStarEmpty}
+              className="spinner"
+              color={color}
             />
           );
         }
@@ -59,4 +75,4 @@ const StarPoint = ({ score = 0 }) => {
   );
 };
 
-export default StarPoint;
+export default React.memo(StarPoint);
