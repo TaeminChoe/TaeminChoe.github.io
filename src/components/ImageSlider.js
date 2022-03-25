@@ -22,7 +22,7 @@ const Contents = styled.div`
 const Handle = styled.span`
   position: absolute;
   top: 0;
-  bottom: 0;
+  height: 99%;
   z-index: 4;
   width: 4%;
   text-align: center;

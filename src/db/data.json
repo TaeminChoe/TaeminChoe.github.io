@@ -1,54 +1,127 @@
 {
-	"color": [
-		{
-			"id": "0",
-			"name": "black",
-			"src": "../imgs/black.png"
-		},
-		{
-			"id": "1",
-			"name": "blue",
-			"src": "../imgs/blue.png"
-		},
-		{
-			"id": "2",
-			"name": "gray",
-			"src": "../imgs/gray.png"
-		},
-		{
-			"id": "3",
-			"name": "green",
-			"src": "../imgs/green.png"
-		},
-		{
-			"id": "4",
-			"name": "navy",
-			"src": "../imgs/navy.png"
-		},
-		{
-			"id": "5",
-			"name": "orange",
-			"src": "../imgs/orange.png"
-		},
-		{
-			"id": "6",
-			"name": "pink",
-			"src": "../imgs/pink.png"
-		},
-		{
-			"id": "7",
-			"name": "purple",
-			"src": "../imgs/purple.png"
-		},
-		{
-			"id": "8",
-			"name": "red",
-			"src": "../imgs/red.png"
-		},
-		{
-			"id": "9",
-			"name": "yellow",
-			"src": "../imgs/yellow.png"
-		}
-	]
+  "color": [
+    {
+      "id": "0",
+      "name": "black",
+      "src": "../imgs/black.png"
+    },
+    {
+      "id": "1",
+      "name": "blue",
+      "src": "../imgs/blue.png"
+    },
+    {
+      "id": "2",
+      "name": "gray",
+      "src": "../imgs/gray.png"
+    },
+    {
+      "id": "3",
+      "name": "green",
+      "src": "../imgs/green.png"
+    },
+    {
+      "id": "4",
+      "name": "navy",
+      "src": "../imgs/navy.png"
+    },
+    {
+      "id": "5",
+      "name": "orange",
+      "src": "../imgs/orange.png"
+    },
+    {
+      "id": "6",
+      "name": "pink",
+      "src": "../imgs/pink.png"
+    },
+    {
+      "id": "7",
+      "name": "purple",
+      "src": "../imgs/purple.png"
+    },
+    {
+      "id": "8",
+      "name": "red",
+      "src": "../imgs/red.png"
+    },
+    {
+      "id": "9",
+      "name": "yellow",
+      "src": "../imgs/yellow.png"
+    }
+  ],
+
+  "header": {
+    "logo": {
+      "src": ""
+    },
+    "icons": [
+      {
+        "git": "https://github.com/TaeminChoe",
+        "id": 1
+      }
+    ]
+  },
+  "home": {
+    "src": "",
+    "introduce": "안녕하세요 최태민입니다... 더적어",
+    "keywords": ["HTML5", "CSS3", "JS(ES6)", "React"]
+  },
+  "info": {
+    "cards": [
+      {
+        "title": "이름",
+        "value": "최태민",
+        "id": 1
+      },
+      {
+        "title": "생년월일",
+        "value": "96.06.28",
+        "id": 2
+      }
+    ],
+    "introduces": [
+      {
+        "title": "",
+        "text": "",
+        "id": 1
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "",
+      "src": "",
+      "score": 4.5,
+      "id": 1
+    }
+  ],
+  "projects": [
+    {
+      "title": "",
+      "src": ["", ""],
+      "subTitle": "",
+      "description": "",
+      "gitUrl": "",
+      "functions": ["", ""],
+      "keywords": ["", ""]
+    }
+  ],
+  "carriers": [
+    {
+      "companyName": "",
+      "team": "",
+      "position": "",
+      "duration": "",
+      "location": "",
+      "description": [
+        {
+          "title": "",
+          "duration": "",
+          "text": ["", ""]
+        }
+      ]
+    }
+  ]
 }
