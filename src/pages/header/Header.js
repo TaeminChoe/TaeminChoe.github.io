@@ -11,7 +11,7 @@ const Container = styled.div`
   color: black;
   height: 10vh;
   width: calc(100vw - 200px);
-  z-index: 1;
+  z-index: 5;
 `;
 
 const Logo = styled.h1`

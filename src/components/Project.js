@@ -1,5 +1,6 @@
 import react from "react";
 import styled from "styled-components";
+import ImageSlider from "./ImageSlider";
 
 const Container = styled.div`
   position: relative;
@@ -11,23 +12,23 @@ const Container = styled.div`
   border: 5px solid #ffdd00;
   border-radius: 10px;
   width: 80%;
-  height: 60vh;
+  margin-bottom: 50px;
 
   .contents {
     display: flex;
+    flex-direction: column;
     width: 100%;
+
     .img {
-      background-color: yellow;
-      width: 100%;
-      height: 400px;
-      margin: 15px;
+      width: calc(100% - 60px);
+      margin: 0 30px;
     }
 
     .description {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: baseline;
+      align-items: flex-start;
       width: 100%;
 
       .detail {
@@ -37,6 +38,10 @@ const Container = styled.div`
       }
     }
   }
+
+  ul {
+    list-style: none;
+  }
 `;
 
 const Project = () => {
@@ -45,14 +50,26 @@ const Project = () => {
       <h3>Project 제목</h3>
       <div className="contents">
         <div className="img">
-          <div>1</div>
+          <ImageSlider show={1} />
         </div>
         <div className="description">
           <div className="detail">
             <h6>제목을 간단히 설명하는 부제</h6>
             <p>이 프로젝트는....</p>
+            <span> 자세히 보기 </span>
           </div>
-          <div className="more"></div>
+          <div className="more">
+            <ul>
+              <li>
+                주요 기능
+                <ul>
+                  <li>비동기 API 처리</li>
+                </ul>
+              </li>
+              <li>URL : www. ㅁㄴㅇ</li>
+              <li>keywords : </li>
+            </ul>
+          </div>
         </div>
       </div>
     </Container>

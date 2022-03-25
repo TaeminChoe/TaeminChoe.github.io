@@ -7,7 +7,6 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: #023047;
-  height: 100vh;
 `;
 
 const Projects = () => {
