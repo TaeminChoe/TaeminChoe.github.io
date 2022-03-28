@@ -1,6 +1,7 @@
 import react from "react";
 import styled from "styled-components";
-import Project from "../../components/Project";
+import Project from "../components/Project";
+import data from "../db/data.json";
 
 const Container = styled.div`
   display: flex;
@@ -10,10 +11,13 @@ const Container = styled.div`
 `;
 
 const Projects = () => {
+  const { projects } = data;
   return (
     <Container>
       <h1>Projects</h1>
-      <Project />
+      {projects.map((project, idx) => {
+        return <Project key={`project_${idx}`} projectInfo={project} />;
+      })}
     </Container>
   );
 };

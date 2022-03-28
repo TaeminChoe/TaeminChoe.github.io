@@ -17,6 +17,7 @@ const Container = styled.div`
   .contents {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 
     .img {
@@ -27,14 +28,32 @@ const Container = styled.div`
     .description {
       display: flex;
       flex-direction: column;
-      justify-content: baseline;
-      align-items: flex-start;
-      width: 100%;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
 
-      .detail {
+      .detail,
+      .more {
         padding: 0 10px;
         width: 80%;
+        text-align: left;
+      }
+      .detail {
         border-bottom: 2px solid black;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        span {
+          background-color: black;
+          color: white;
+          padding: 5px;
+          cursor: pointer;
+        }
+      }
+      .more {
+        ul {
+          padding-left: 0;
+        }
       }
     }
   }
@@ -44,30 +63,29 @@ const Container = styled.div`
   }
 `;
 
-const Project = () => {
+const Project = ({ projectInfo }) => {
+  const { title, src, subTitle, description, gitUrl, functions, keywords } =
+    projectInfo;
   return (
     <Container>
-      <h3>Project 제목</h3>
+      <h3>{title}</h3>
       <div className="contents">
         <div className="img">
-          <ImageSlider show={1} />
+          <ImageSlider show={1} imgs={src} />
         </div>
         <div className="description">
           <div className="detail">
-            <h6>제목을 간단히 설명하는 부제</h6>
-            <p>이 프로젝트는....</p>
-            <span> 자세히 보기 </span>
+            <h6>{subTitle}</h6>
+            <p>{description}</p>
+            <a href={gitUrl} target="_blank">
+              <span> 자세히 보기... </span>
+            </a>
           </div>
           <div className="more">
             <ul>
-              <li>
-                주요 기능
-                <ul>
-                  <li>비동기 API 처리</li>
-                </ul>
-              </li>
-              <li>URL : www. ㅁㄴㅇ</li>
-              <li>keywords : </li>
+              <li>주요 기능 : {functions.map((value) => value).join(", ")}</li>
+              <li>{gitUrl}</li>
+              <li>keywords : {keywords.map((value) => value).join(", ")}</li>
             </ul>
           </div>
         </div>

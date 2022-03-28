@@ -39,6 +39,8 @@ const StarPoint = ({ score = 0, color = "white", visible = "hidden" }) => {
     return stars;
   };
 
+  if (score === 0) return;
+
   return (
     <Container style={{ visibility: visible }}>
       {getStars().map((value, index) => {

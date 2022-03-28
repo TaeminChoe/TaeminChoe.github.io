@@ -14,7 +14,7 @@ const Keyword = styled.div`
   }
 `;
 
-const Skill = ({ imgSrc = "", score }) => {
+const Skill = ({ imgSrc = "", score = 0 }) => {
   const [hover, setHover] = useState(false);
 
   const handleMouseOver = () => {

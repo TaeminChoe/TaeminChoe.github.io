@@ -4,6 +4,22 @@ import styled from "styled-components";
 const Container = styled.div`
   background-color: #ffb703;
   margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .bar {
+    border-bottom: 3px solid black;
+    width: 40%;
+  }
 `;
 
 const Logo = styled.h1`
@@ -18,7 +34,9 @@ const Content = styled.p`
 const Home = () => {
   return (
     <Container>
-      <Logo>MAIN IMAGE</Logo>
+      <h1>최태민</h1>
+      <h2>- 웹 개발자 포트폴리오 -</h2>
+      <div className="bar" />
       <Content>간단한 자개소개글</Content>
     </Container>
   );

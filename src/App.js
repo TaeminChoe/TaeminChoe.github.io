@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import styled from "styled-components";
-import Header from "./pages/header/Header";
-import Home from "./pages/home/Home";
-import AboutMe from "./pages/aboutMe/AboutMe";
-import Skills from "./pages/skills/Skills";
-import Projects from "./pages/projects/Projects";
-import Career from "./pages/career/Career";
-import Footer from "./pages/footer/Footer";
+import Header from "./pages/Header";
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Career from "./pages/Career";
+import Footer from "./pages/Footer";
 
 const AppContainer = styled.div`
   display: flex;
