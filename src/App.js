@@ -22,6 +22,10 @@ const AppContainer = styled.div`
     max-width: 72.25rem;
     padding: 4rem 2rem;
     margin: 0 auto;
+
+    & > h1 {
+      margin-top: 0;
+    }
   }
 `;
 

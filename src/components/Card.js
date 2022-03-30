@@ -5,11 +5,11 @@ const Container = styled.div`
   background-color: #eeeeee;
   color: black;
   /* padding: 10px;
-  transition: 200ms;
   width: 200px;
   height: 100px;
   margin: 20px 80px; */
 
+  transition: 200ms;
   font-size: 1.2rem;
   border-radius: 10px;
   border: 1px solid black;

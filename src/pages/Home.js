@@ -18,7 +18,7 @@ const Container = styled.div`
   }
   .bar {
     border-bottom: 3px solid black;
-    width: 40%;
+    /* width: 40%; */
   }
 `;
 
@@ -38,12 +38,14 @@ const Home = ({ innerRef }) => {
         innerRef.current[0] = el;
       }}
     >
-      <h1>최태민</h1>
-      <h2>- 웹 개발자 포트폴리오 -</h2>
-      <div className="bar" />
-      <Content>
-        안녕하십니까 차근차근 확실하게 나아가 성장하는 개발자 최태민입니다.
-      </Content>
+      <article>
+        <h1>최태민</h1>
+        <h2>- 웹 개발자 포트폴리오 -</h2>
+        <div className="bar" />
+        <Content>
+          안녕하십니까 차근차근 확실하게 나아가 성장하는 개발자 최태민입니다.
+        </Content>
+      </article>
     </Container>
   );
 };
