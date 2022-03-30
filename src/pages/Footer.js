@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   background-color: #219ebc;
-  padding: 0 100px;
   h6 {
     margin-bottom: 50px;
   }

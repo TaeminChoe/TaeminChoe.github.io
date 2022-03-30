@@ -31,13 +31,19 @@ const Content = styled.p`
   font-weight: 600;
 `;
 
-const Home = () => {
+const Home = ({ innerRef }) => {
   return (
-    <Container>
+    <Container
+      ref={(el) => {
+        innerRef.current[0] = el;
+      }}
+    >
       <h1>최태민</h1>
       <h2>- 웹 개발자 포트폴리오 -</h2>
       <div className="bar" />
-      <Content>간단한 자개소개글</Content>
+      <Content>
+        안녕하십니까 차근차근 확실하게 나아가 성장하는 개발자 최태민입니다.
+      </Content>
     </Container>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import styled from "styled-components";
 import Header from "./pages/Header";
@@ -14,25 +14,38 @@ const AppContainer = styled.div`
   flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
   color: #eeeeee;
-  & > div:nth-child(n + 2) {
-    padding: 0 300px;
-    /* height: 80vh; */
-  }
-
   h1 {
     font-size: 3rem;
+  }
+
+  & > div > article {
+    max-width: 72.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
   }
 `;
 
 function App() {
+  const scroll = useRef([]);
+
+  const scrollMove = (id) => {
+    const { scrollY } = window;
+    const height = scroll.current[id].getBoundingClientRect().y;
+    window.scroll({
+      top: id === 0 ? 0 : scrollY + height,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <AppContainer className="App">
-      <Header />
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Career />
+      <Header scrollMove={scrollMove} />
+      <Home innerRef={scroll} />
+      <AboutMe innerRef={scroll} />
+      <Skills innerRef={scroll} />
+      <Projects innerRef={scroll} />
+      <Career innerRef={scroll} />
       <Footer />
     </AppContainer>
   );

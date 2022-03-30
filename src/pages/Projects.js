@@ -4,20 +4,30 @@ import Project from "../components/Project";
 import data from "../db/data.json";
 
 const Container = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   background-color: #023047;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
-const Projects = () => {
+const Projects = ({ innerRef }) => {
   const { projects } = data;
   return (
-    <Container>
-      <h1>Projects</h1>
-      {projects.map((project, idx) => {
-        return <Project key={`project_${idx}`} projectInfo={project} />;
-      })}
+    <Container
+      ref={(el) => {
+        innerRef.current[3] = el;
+      }}
+    >
+      <article>
+        <h1>Projects</h1>
+        {projects.map((project, idx) => {
+          return <Project key={`project_${idx}`} projectInfo={project} />;
+        })}
+      </article>
     </Container>
   );
 };

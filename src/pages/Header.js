@@ -63,16 +63,19 @@ const Icons = styled.ul`
 
 const scrollIndex = [0, 323, 323, 200, 300, 400, 500];
 
-const Header = () => {
+const Header = ({ scrollMove }) => {
   const handleOnClick = (e) => {
     const id = Number(e.target.id);
-    const height = window.innerHeight;
-    window.scroll({
-      top: scrollIndex[id],
-      // top: id * height * 0.8,
-      left: 0,
-      behavior: "smooth",
-    });
+    // const height = window.innerHeight;
+    // window.scroll({
+    //   top: scrollIndex[id],
+    //   // top: id * height * 0.8,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
+    // innerRef[id].current.scrollIntoView();
+    // console.log(innerRef[id]);
+    scrollMove(id);
   };
 
   return (
@@ -95,12 +98,6 @@ const Header = () => {
         </li>
         <li id="4" onClick={handleOnClick}>
           Career
-        </li>
-        <li id="5" onClick={handleOnClick}>
-          Activity
-        </li>
-        <li id="6" onClick={handleOnClick}>
-          Archiving
         </li>
       </Menu>
       <Icons>

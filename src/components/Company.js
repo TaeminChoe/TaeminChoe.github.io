@@ -6,7 +6,6 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 150px;
   margin-bottom: 50px;
 
   .detail {
@@ -16,6 +15,7 @@ const Container = styled.div`
 `;
 
 const Logo = styled.div`
+  margin-top: 20px;
   margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
@@ -70,7 +70,7 @@ const Company = ({ carrierInfo }) => {
             <div className="duration">기간 : {duration}</div>
             {description.map((desc, idx) => {
               return (
-                <>
+                <div className="works" key={`works_${idx}`}>
                   <h4>
                     {desc.title} ({desc.duration})
                   </h4>
@@ -79,7 +79,7 @@ const Company = ({ carrierInfo }) => {
                       return <li key={`work_${idx}`}>{work}</li>;
                     })}
                   </ul>
-                </>
+                </div>
               );
             })}
           </div>

@@ -14,21 +14,31 @@ const Contents = styled.div`
   justify-content: space-around;
 `;
 
-const AboutMe = () => {
+const AboutMe = ({ innerRef }) => {
   const animatedItem = useScrollFadeIn();
   const { cards, introduces } = data.info;
 
   return (
-    <Container>
-      <h1>About Me</h1>
-      <Contents {...animatedItem}>
-        {cards.map((card, idx) => {
-          return (
-            <Card key={`card_${idx}`} title={card.title} content={card.value} />
-          );
-        })}
-        {/*Todo : 자기소개 */}
-      </Contents>
+    <Container
+      ref={(el) => {
+        innerRef.current[1] = el;
+      }}
+    >
+      <article>
+        <h1>About Me</h1>
+        <Contents {...animatedItem}>
+          {cards.map((card, idx) => {
+            return (
+              <Card
+                key={`card_${idx}`}
+                title={card.title}
+                content={card.value}
+              />
+            );
+          })}
+          {/*Todo : 자기소개 */}
+        </Contents>
+      </article>
     </Container>
   );
 };
