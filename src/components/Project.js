@@ -64,8 +64,16 @@ const Container = styled.div`
 `;
 
 const Project = ({ projectInfo }) => {
-  const { title, src, subTitle, description, gitUrl, functions, keywords } =
-    projectInfo;
+  const {
+    title,
+    src,
+    subTitle,
+    description,
+    gitUrl,
+    functions,
+    keywords,
+    link,
+  } = projectInfo;
   return (
     <Container>
       <h3>{title}</h3>
@@ -84,7 +92,9 @@ const Project = ({ projectInfo }) => {
           <div className="more">
             <ul>
               <li>주요 기능 : {functions.map((value) => value).join(", ")}</li>
-              <li>{gitUrl}</li>
+              <li>
+                link : <a href={link}>https://taeminchoe.github.io/</a>
+              </li>
               <li>keywords : {keywords.map((value) => value).join(", ")}</li>
             </ul>
           </div>

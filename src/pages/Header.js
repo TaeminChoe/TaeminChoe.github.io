@@ -16,11 +16,9 @@ const Container = styled.div`
 
 const Logo = styled.h1`
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    color: tomato;
-    transition: all 0.2s ease-in-out;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Menu = styled.ul`
@@ -81,7 +79,7 @@ const Header = ({ scrollMove }) => {
   return (
     <Container>
       <Logo id="0" onClick={handleOnClick}>
-        LOGO
+        <img src="imgs/Logo.png" />
       </Logo>
       <Menu>
         <li id="0" onClick={handleOnClick}>
@@ -103,7 +101,7 @@ const Header = ({ scrollMove }) => {
       <Icons>
         <li>
           <a target="_blank" href="https://github.com/TaeminChoe">
-            git
+            <img src="imgs/Git.png" />
           </a>
         </li>
       </Icons>

@@ -33,10 +33,10 @@ function App() {
   const scroll = useRef([]);
 
   const scrollMove = (id) => {
-    const { scrollY } = window;
+    const { scrollY, innerHeight } = window;
     const height = scroll.current[id].getBoundingClientRect().y;
     window.scroll({
-      top: id === 0 ? 0 : scrollY + height,
+      top: id === 0 ? 0 : scrollY + height - innerHeight * 0.1,
       left: 0,
       behavior: "smooth",
     });
