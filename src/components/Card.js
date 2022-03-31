@@ -1,43 +1,69 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as Icon from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
   background-color: #eeeeee;
   color: black;
-  /* padding: 10px;
-  width: 200px;
-  height: 100px;
-  margin: 20px 80px; */
-
-  transition: 200ms;
   font-size: 1.2rem;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
-  width: calc(33% - 15px);
   margin-bottom: 2rem;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
-  cursor: pointer;
+  width: calc(33% - 15px);
 
-  h3,
-  p {
-    margin: 10px;
+  @media screen and (max-width: 1280px) {
+    width: calc(50% - 15px);
   }
 
-  &:hover {
-    transform: scale(1.2);
+  .icon {
+    width: calc(40% - 4rem);
+    font-size: 3rem;
+    margin: 0 2rem;
+  }
+
+  .contents {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    & > div {
+      margin: 10px;
+      font-weight: 600;
+
+      &:nth-child(1) {
+        font-size: 1.5rem;
+      }
+      &:nth-child(2) {
+        text-align: left;
+      }
+    }
   }
 `;
 
-const Card = ({ title, content }) => {
+const Card = ({ title, content, icon }) => {
+  let info = [content];
+  if (content.length > 15) {
+    info = content.split(" ");
+  }
   return (
     <Container>
-      <h3>{title}</h3>
-      <p>{content}</p>
+      <div className="icon">
+        <FontAwesomeIcon icon={Icon[icon]} />
+      </div>
+      <div className="contents">
+        <div>{title}</div>
+        <div>
+          {info.map((value) => {
+            return <div>{value}</div>;
+          })}
+        </div>
+      </div>
     </Container>
   );
 };

@@ -73,22 +73,38 @@
       {
         "title": "이름",
         "value": "최태민",
+        "icon": "faUser",
         "id": 1
       },
       {
         "title": "생년월일",
-        "value": "96.06.28",
+        "value": "1996.06.28",
+        "icon": "faCakeCandles",
         "id": 2
       },
       {
         "title": "주소지",
         "value": "경기도 과천시",
+        "icon": "faLocationDot",
         "id": 3
       },
       {
-        "title": "학력",
-        "value": "군산대학교 소프트웨어공학사",
+        "title": "연락처",
+        "value": "010-7192-4370",
+        "icon": "faMobileScreenButton",
         "id": 4
+      },
+      {
+        "title": "E-MAIL",
+        "value": "xoa28@naver.com",
+        "icon": "faEnvelope",
+        "id": 5
+      },
+      {
+        "title": "학력",
+        "value": "군산대학교 소프트웨어융합공학사",
+        "icon": "faGraduationCap",
+        "id": 6
       }
     ],
     "introduces": [
@@ -217,6 +233,56 @@
     }
   ],
   "projects": [
+    {
+      "title": "웹 개발자 포트폴리오",
+      "src": ["imgs/white.png"],
+      "subTitle": "React를 기반으로 제작한 웹 포트폴리오",
+      "description": "이 프로젝트는 지금 보고 있는 홈페이지를 만든 프로젝트 입니다. React로 작성하였으며, 컴포넌트와 더미데이터를 활용하여 정적이지만 앞으로 유지보수 하기 쉽도록 설계하였습니다.",
+      "gitUrl": "https://github.com/TaeminChoe/TaeminChoe.github.io",
+      "link": "https://taeminchoe.github.io/",
+      "functions": ["React 컴포넌트 설계", "커스텀 hooks", "styled-components"],
+      "keywords": ["React", "styled-components", "React Hook"]
+    },
+    {
+      "title": "웹 개발자 포트폴리오",
+      "src": ["imgs/black.png", "imgs/pink.png"],
+      "subTitle": "React를 기반으로 제작한 웹 포트폴리오",
+      "description": "이 프로젝트는 지금 보고 있는 홈페이지를 만든 프로젝트 입니다. React로 작성하였으며, 컴포넌트와 더미데이터를 활용하여 정적이지만 앞으로 유지보수 하기 쉽도록 설계하였습니다.",
+      "gitUrl": "https://github.com/TaeminChoe/TaeminChoe.github.io",
+      "link": "https://taeminchoe.github.io/",
+      "functions": ["React 컴포넌트 설계", "커스텀 hooks", "styled-components"],
+      "keywords": ["React", "styled-components", "React Hook"]
+    },
+    {
+      "title": "웹 개발자 포트폴리오",
+      "src": ["imgs/black.png", "imgs/pink.png"],
+      "subTitle": "React를 기반으로 제작한 웹 포트폴리오",
+      "description": "이 프로젝트는 지금 보고 있는 홈페이지를 만든 프로젝트 입니다. React로 작성하였으며, 컴포넌트와 더미데이터를 활용하여 정적이지만 앞으로 유지보수 하기 쉽도록 설계하였습니다.",
+      "gitUrl": "https://github.com/TaeminChoe/TaeminChoe.github.io",
+      "link": "https://taeminchoe.github.io/",
+      "functions": ["React 컴포넌트 설계", "커스텀 hooks", "styled-components"],
+      "keywords": ["React", "styled-components", "React Hook"]
+    },
+    {
+      "title": "웹 개발자 포트폴리오",
+      "src": ["imgs/black.png", "imgs/pink.png"],
+      "subTitle": "React를 기반으로 제작한 웹 포트폴리오",
+      "description": "이 프로젝트는 지금 보고 있는 홈페이지를 만든 프로젝트 입니다. React로 작성하였으며, 컴포넌트와 더미데이터를 활용하여 정적이지만 앞으로 유지보수 하기 쉽도록 설계하였습니다.",
+      "gitUrl": "https://github.com/TaeminChoe/TaeminChoe.github.io",
+      "link": "https://taeminchoe.github.io/",
+      "functions": ["React 컴포넌트 설계", "커스텀 hooks", "styled-components"],
+      "keywords": ["React", "styled-components", "React Hook"]
+    },
+    {
+      "title": "웹 개발자 포트폴리오",
+      "src": ["imgs/black.png", "imgs/pink.png"],
+      "subTitle": "React를 기반으로 제작한 웹 포트폴리오",
+      "description": "이 프로젝트는 지금 보고 있는 홈페이지를 만든 프로젝트 입니다. React로 작성하였으며, 컴포넌트와 더미데이터를 활용하여 정적이지만 앞으로 유지보수 하기 쉽도록 설계하였습니다.",
+      "gitUrl": "https://github.com/TaeminChoe/TaeminChoe.github.io",
+      "link": "https://taeminchoe.github.io/",
+      "functions": ["React 컴포넌트 설계", "커스텀 hooks", "styled-components"],
+      "keywords": ["React", "styled-components", "React Hook"]
+    },
     {
       "title": "웹 개발자 포트폴리오",
       "src": ["imgs/black.png", "imgs/pink.png"],

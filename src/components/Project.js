@@ -8,11 +8,16 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   color: black;
-  background-color: #eeeeee;
-  border: 5px solid #ffdd00;
+  background-color: #aaaaaa;
+  /* border: 5px solid black; */
   border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
   width: 80%;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 1280px) {
+    width: 60%;
+  }
 
   .contents {
     display: flex;

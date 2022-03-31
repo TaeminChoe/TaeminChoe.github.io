@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
-  background-color: #fb8500;
+  background-color: #f1f1f1;
   color: black;
-  opacity: 0.8;
+  opacity: 1;
 `;
 
 const Title = styled.h2`
@@ -22,6 +22,13 @@ const Categorys = styled.div`
   justify-content: baseline;
   align-items: center;
   height: 100vh;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 50rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    height: 140vh;
+  }
 `;
 
 const Category = styled.div`
@@ -34,9 +41,13 @@ const Category = styled.div`
   width: calc(33% - 30px);
   margin: 5px;
   padding: 10px;
-  background-color: #eeeeee;
-  border: 1px solid black;
+  background-color: white;
+  /* border: 1px solid black; */
   box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
+
+  @media screen and (max-width: 1280px) {
+    width: calc(50% - 30px);
+  }
 
   div {
     display: flex;

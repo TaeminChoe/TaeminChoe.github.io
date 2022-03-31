@@ -7,8 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
-  background-color: #eeeeee;
-  /* background-color: #fd9e02; */
+  background-color: white;
   color: black;
   opacity: 0.8;
 `;
@@ -17,6 +16,12 @@ const Contents = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 50rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
 `;
 
 const AboutMe = ({ innerRef }) => {
@@ -41,6 +46,7 @@ const AboutMe = ({ innerRef }) => {
                 key={`card_${idx}`}
                 title={card.title}
                 content={card.value}
+                icon={card.icon}
               />
             );
           })}
