@@ -74,6 +74,7 @@ const Project = ({ projectInfo }) => {
     keywords,
     link,
   } = projectInfo;
+
   return (
     <Container>
       <h3>{title}</h3>
@@ -93,7 +94,10 @@ const Project = ({ projectInfo }) => {
             <ul>
               <li>주요 기능 : {functions.map((value) => value).join(", ")}</li>
               <li>
-                link : <a href={link}>https://taeminchoe.github.io/</a>
+                link :{" "}
+                <a target="_blank" href={link}>
+                  https://taeminchoe.github.io/
+                </a>
               </li>
               <li>keywords : {keywords.map((value) => value).join(", ")}</li>
             </ul>

@@ -12,7 +12,6 @@ import Footer from "./pages/Footer";
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: "Source Sans Pro", sans-serif;
   color: #eeeeee;
   h1 {
     font-size: 3rem;
@@ -25,6 +24,8 @@ const AppContainer = styled.div`
 
     & > h1 {
       margin-top: 0;
+      font-family: "Black Han Sans", sans-serif;
+      font-weight: 400;
     }
   }
 `;

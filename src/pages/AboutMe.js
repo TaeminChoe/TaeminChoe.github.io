@@ -3,9 +3,14 @@ import styled from "styled-components";
 import Card from "../components/Card";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import data from "../db/data.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
-  background-color: #fd9e02;
+  background-color: #eeeeee;
+  /* background-color: #fd9e02; */
+  color: black;
+  opacity: 0.8;
 `;
 
 const Contents = styled.div`
@@ -25,7 +30,10 @@ const AboutMe = ({ innerRef }) => {
       }}
     >
       <article>
-        <h1>About Me</h1>
+        <h1>
+          <FontAwesomeIcon icon={faBrush} />
+          {` ABOUT ME`}
+        </h1>
         <Contents {...animatedItem}>
           {cards.map((card, idx) => {
             return (

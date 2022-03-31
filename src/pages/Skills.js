@@ -2,9 +2,13 @@ import react, { useState } from "react";
 import styled from "styled-components";
 import Skill from "../components/Skill";
 import data from "../db/data.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
   background-color: #fb8500;
+  color: black;
+  opacity: 0.8;
 `;
 
 const Title = styled.h2`
@@ -53,7 +57,10 @@ const Skills = ({ innerRef }) => {
       }}
     >
       <article>
-        <h1>Skills</h1>
+        <h1>
+          <FontAwesomeIcon icon={faBrush} />
+          {` SKILLS`}
+        </h1>
         <Categorys>
           {skills.map((skill, idx) => {
             return (

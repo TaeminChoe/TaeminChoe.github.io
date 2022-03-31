@@ -2,6 +2,8 @@ import react from "react";
 import styled from "styled-components";
 import Project from "../components/Project";
 import data from "../db/data.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
   background-color: #023047;
@@ -23,7 +25,10 @@ const Projects = ({ innerRef }) => {
       }}
     >
       <article>
-        <h1>Projects</h1>
+        <h1>
+          <FontAwesomeIcon icon={faBrush} />
+          {` PROJECTS`}
+        </h1>
         {projects.map((project, idx) => {
           return <Project key={`project_${idx}`} projectInfo={project} />;
         })}

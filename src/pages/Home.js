@@ -2,8 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: #ffb703;
+  /* background-color: #ffb703; */
+  background-image: url("imgs/Home.jpg");
+  background-size: cover;
+  opacity: 0.8;
   margin-top: 10vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +16,8 @@ const Container = styled.div`
   h1 {
     font-size: 4rem;
     margin-bottom: 10px;
+    font-family: sans-serif !important;
+    font-weight: 800;
   }
   h2 {
     font-size: 3rem;

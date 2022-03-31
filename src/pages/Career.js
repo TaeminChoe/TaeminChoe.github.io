@@ -2,6 +2,8 @@ import react from "react";
 import styled from "styled-components";
 import Company from "../components/Company";
 import data from "../db/data.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
   background-color: #126782;
@@ -23,7 +25,10 @@ const Career = ({ innerRef }) => {
       }}
     >
       <article>
-        <h1>Career</h1>
+        <h1>
+          <FontAwesomeIcon icon={faBrush} />
+          {` CAREER`}
+        </h1>
         {carriers.map((carrier, idx) => {
           return <Company key={`carrier_${idx}`} carrierInfo={carrier} />;
         })}
