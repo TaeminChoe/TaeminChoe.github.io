@@ -16,10 +16,6 @@ const Container = styled.div`
   align-items: center;
   width: calc(33% - 15px);
 
-  @media screen and (max-width: 1280px) {
-    width: calc(50% - 15px);
-  }
-
   .icon {
     width: calc(40% - 4rem);
     font-size: 3rem;
@@ -42,6 +38,29 @@ const Container = styled.div`
       &:nth-child(2) {
         text-align: left;
       }
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: calc(50% - 15px);
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 15px);
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+    .icon {
+      width: calc(40% - 2rem);
+      font-size: 2rem;
+      margin: 0 1rem;
     }
   }
 `;

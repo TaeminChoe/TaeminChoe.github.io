@@ -12,6 +12,16 @@ const Container = styled.div`
     border-left: 2px solid gray;
     padding-left: 20px;
   }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .detail {
+      border: none;
+    }
+  }
 `;
 
 const Logo = styled.div`
@@ -21,11 +31,19 @@ const Logo = styled.div`
   overflow: hidden;
   width: 100px;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.7rem;
+    margin: 0;
+  }
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
   }
 `;
 

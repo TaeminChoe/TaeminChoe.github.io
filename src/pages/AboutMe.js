@@ -17,10 +17,18 @@ const Contents = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1024px) {
     max-width: 50rem;
-    padding: 0 2rem;
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 30rem;
+    padding: 0 2rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0;
   }
 `;
 
@@ -40,10 +48,10 @@ const AboutMe = ({ innerRef }) => {
           {` ABOUT ME`}
         </h1>
         <Contents {...animatedItem}>
-          {cards.map((card, idx) => {
+          {cards.map((card) => {
             return (
               <Card
-                key={`card_${idx}`}
+                key={card.id}
                 title={card.title}
                 content={card.value}
                 icon={card.icon}

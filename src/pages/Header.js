@@ -2,16 +2,27 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 100px;
-  background-color: white;
+  background-color: #eeeeee;
   color: black;
-  height: 10vh;
-  width: calc(100vw - 200px);
+  position: fixed;
   z-index: 5;
+  height: 10vh;
+  width: calc(100%);
+
+  @media screen and (max-width: 768px) {
+    visibility: hidden;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem !important;
+
+    h1 {
+      margin: 0 !important;
+    }
+  }
 `;
 
 const Logo = styled.h1`
@@ -24,9 +35,11 @@ const Logo = styled.h1`
 const Menu = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 20px;
   li {
-    margin-right: 20px;
+    margin-right: 40px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     &:hover {
@@ -66,33 +79,35 @@ const Header = ({ scrollMove }) => {
 
   return (
     <Container>
-      <Logo id="0" onClick={handleOnClick}>
-        <img src="imgs/Logo.png" />
-      </Logo>
-      <Menu>
-        <li id="0" onClick={handleOnClick}>
-          Home
-        </li>
-        <li id="1" onClick={handleOnClick}>
-          About me
-        </li>
-        <li id="2" onClick={handleOnClick}>
-          Skills
-        </li>
-        <li id="3" onClick={handleOnClick}>
-          Projects
-        </li>
-        <li id="4" onClick={handleOnClick}>
-          Career
-        </li>
-      </Menu>
-      <Icons>
-        <li>
-          <a target="_blank" href="https://github.com/TaeminChoe">
-            <img src="imgs/Git.png" />
-          </a>
-        </li>
-      </Icons>
+      <article>
+        <Logo id="0" onClick={handleOnClick}>
+          <img src="imgs/Logo.png" />
+        </Logo>
+        <Menu>
+          <li id="0" onClick={handleOnClick}>
+            Home
+          </li>
+          <li id="1" onClick={handleOnClick}>
+            About me
+          </li>
+          <li id="2" onClick={handleOnClick}>
+            Skills
+          </li>
+          <li id="3" onClick={handleOnClick}>
+            Projects
+          </li>
+          <li id="4" onClick={handleOnClick}>
+            Career
+          </li>
+        </Menu>
+        <Icons>
+          <li>
+            <a target="_blank" href="https://github.com/TaeminChoe">
+              <img src="imgs/Git.png" />
+            </a>
+          </li>
+        </Icons>
+      </article>
     </Container>
   );
 };

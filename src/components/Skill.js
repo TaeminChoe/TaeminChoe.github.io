@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import StarPoint from "./StarPoint";
 
 const Keyword = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +12,13 @@ const Keyword = styled.div`
   margin-bottom: 20px;
   img {
     cursor: pointer;
+
+    @media screen and (max-width: 500px) {
+      width: calc(100% - 4rem);
+      padding: 0 2rem;
+      height: auto;
+      object-fit: cover;
+    }
   }
 `;
 

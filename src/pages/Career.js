@@ -15,6 +15,10 @@ const Container = styled.div`
     justify-contents: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const Career = ({ innerRef }) => {

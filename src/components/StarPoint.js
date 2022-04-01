@@ -22,6 +22,10 @@ const Container = styled.div`
       transform: rotate(360deg);
     }
   }
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const StarPoint = ({ score = 0, color = "white", visible = "hidden" }) => {

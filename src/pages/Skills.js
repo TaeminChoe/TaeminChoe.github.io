@@ -14,6 +14,10 @@ const Container = styled.div`
 const Title = styled.h2`
   width: 100%;
   color: black;
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const Categorys = styled.div`
@@ -24,11 +28,11 @@ const Categorys = styled.div`
   align-items: center;
   height: 100vh;
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1024px) {
     max-width: 50rem;
     padding: 0 2rem;
     margin: 0 auto;
-    height: 140vh;
+    height: auto;
   }
 `;
 
@@ -39,15 +43,22 @@ const Category = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: calc(33% - 30px);
   margin: 5px;
   padding: 10px;
   background-color: white;
-  /* border: 1px solid black; */
   box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
+  width: calc(33% - 30px);
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1024px) {
     width: calc(50% - 30px);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: calc(80% - 30px);
+  }
+
+  @media screen and (max-width: 500px) {
+    width: calc(100% - 30px);
   }
 
   div {

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  /* background-color: #ffb703; */
   background-image: url("imgs/Home.jpg");
   background-size: cover;
   opacity: 0.8;
@@ -17,7 +16,7 @@ const Container = styled.div`
     font-size: 4rem;
     margin-bottom: 10px;
     font-family: sans-serif !important;
-    font-weight: 800;
+    font-weight: 600 !important;
   }
   h2 {
     font-size: 3rem;
@@ -25,6 +24,20 @@ const Container = styled.div`
   .bar {
     border-bottom: 3px solid black;
     /* width: 40%; */
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    height: auto;
+  }
+
+  @media screen and (max-width: 540px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -35,6 +48,11 @@ const Logo = styled.h1`
 const Content = styled.p`
   font-size: 1.5rem;
   font-weight: 600;
+
+  @media screen and (max-width: 549px) {
+    font-size: 1rem;
+    color: black;
+  }
 `;
 
 const Home = ({ innerRef }) => {

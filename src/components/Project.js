@@ -19,8 +19,16 @@ const Container = styled.div`
     margin: 2rem 0;
   }
 
-  @media screen and (max-width: 1280px) {
-    width: 60%;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
   }
 
   .contents {
@@ -97,7 +105,6 @@ const Project = ({ projectInfo }) => {
         </div>
         <div className="description">
           <div className="detail">
-            <h4>{subTitle}</h4>
             <p>{description}</p>
             <a href={gitUrl} target="_blank">
               <span> 자세히 보기... </span>
