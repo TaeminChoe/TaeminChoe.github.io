@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
-  background-color: #126782;
+  background-color: #eeeeee;
+  color: black;
 
   article {
     display: flex;

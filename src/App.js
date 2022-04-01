@@ -12,6 +12,7 @@ import Footer from "./pages/Footer";
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: "Noto Sans KR", sans-serif;
   color: #eeeeee;
   h1 {
     font-size: 3rem;

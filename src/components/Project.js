@@ -8,12 +8,16 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   color: black;
-  background-color: #aaaaaa;
+  background-color: #e6e7d9;
   /* border: 5px solid black; */
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
-  width: 80%;
+  width: 60rem;
   margin-bottom: 50px;
+
+  h2 {
+    margin: 2rem 0;
+  }
 
   @media screen and (max-width: 1280px) {
     width: 60%;
@@ -26,8 +30,8 @@ const Container = styled.div`
     width: 100%;
 
     .img {
-      width: calc(100% - 60px);
-      margin: 0 30px;
+      width: 90%;
+      /* margin: 0 50px; */
     }
 
     .description {
@@ -35,24 +39,28 @@ const Container = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 90%;
 
       .detail,
       .more {
-        padding: 0 10px;
-        width: 80%;
+        width: 100%;
         text-align: left;
       }
       .detail {
         border-bottom: 2px solid black;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
+        padding-bottom: 2rem;
+        margin-bottom: 0.5rem;
 
-        span {
+        & > * {
+          margin: 2rem 0;
+        }
+
+        a {
           background-color: black;
           color: white;
-          padding: 5px;
+          padding: 10px;
           cursor: pointer;
+          margin-bottom: 2rem;
         }
       }
       .more {
@@ -82,14 +90,14 @@ const Project = ({ projectInfo }) => {
 
   return (
     <Container>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <div className="contents">
         <div className="img">
           <ImageSlider show={1} imgs={src} />
         </div>
         <div className="description">
           <div className="detail">
-            <h6>{subTitle}</h6>
+            <h4>{subTitle}</h4>
             <p>{description}</p>
             <a href={gitUrl} target="_blank">
               <span> 자세히 보기... </span>
