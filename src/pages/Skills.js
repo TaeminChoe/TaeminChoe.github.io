@@ -2,6 +2,7 @@ import react, { useState } from "react";
 import styled from "styled-components";
 import Skill from "../components/Skill";
 import data from "../db/data.json";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
@@ -70,6 +71,7 @@ const Category = styled.div`
 `;
 
 const Skills = ({ innerRef }) => {
+  const animatedItem = useScrollFadeIn("left");
   const ICON_SIZE = "4x";
   const { skills } = data;
 
@@ -84,7 +86,7 @@ const Skills = ({ innerRef }) => {
           <FontAwesomeIcon icon={faBrush} />
           {` SKILLS`}
         </h1>
-        <Categorys>
+        <Categorys {...animatedItem}>
           {skills.map((skill, idx) => {
             return (
               <Category key={`skill_${idx}`}>

@@ -1,5 +1,6 @@
 import react from "react";
 import styled from "styled-components";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 const Container = styled.div`
   display: flex;
@@ -68,8 +69,10 @@ const Company = ({ carrierInfo }) => {
     location,
     description,
   } = carrierInfo;
+  const animatedItem = useScrollFadeIn("down");
+
   return (
-    <Container>
+    <Container {...animatedItem}>
       <Logo>
         <img src={logoSrc} />
       </Logo>

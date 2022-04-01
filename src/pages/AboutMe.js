@@ -48,17 +48,14 @@ const AboutMe = ({ innerRef }) => {
           {` ABOUT ME`}
         </h1>
         <Contents {...animatedItem}>
-          {cards.map((card) => {
-            return (
-              <Card
-                key={card.id}
-                title={card.title}
-                content={card.value}
-                icon={card.icon}
-              />
-            );
-          })}
-          {/*Todo : 자기소개 */}
+          {cards.map((card) => (
+            <Card
+              key={card.id}
+              title={card.title}
+              content={card.value}
+              icon={card.icon}
+            />
+          ))}
         </Contents>
       </article>
     </Container>
