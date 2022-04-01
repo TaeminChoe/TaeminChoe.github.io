@@ -229,8 +229,17 @@
   "projects": [
     {
       "title": "포트폴리오 홈페이지",
-      "src": ["imgs/white.png"],
-      "description": "제가 웹 개발자로써 어떤 역량을 가지고 있는지, 어떤 활동을 해 왔는지 소개하기 위한 포트폴리오 홈페이지를 제작한 프로젝트입니다. 리엑트를 기반으로 제작하였으며, 조금 심심할 수 있는 홈페이지에 스크롤 작동시 반응하는 애니메이션 이벤트를 활용하여 조금 다이나믹 하게 꾸며 보았습니다. PC, Mobile, Tablet 등 다양한 기기에서 접속해도 최소한의 가독성을 제공할 수 있도록 반응형 요소를 추가하였습니다. ",
+      "src": [
+        "imgs/projects/portfolio/1.png",
+        "imgs/projects/portfolio/2.png",
+        "imgs/projects/portfolio/3.png",
+        "imgs/projects/portfolio/4.png",
+        "imgs/projects/portfolio/5.png",
+        "imgs/projects/portfolio/6.png",
+        "imgs/projects/portfolio/7.png",
+        "imgs/projects/portfolio/8.png"
+      ],
+      "description": "제가 웹 개발자로써 어떤 역량을 가지고 있는지, 어떤 활동을 해 왔는지 소개하기 위한 포트폴리오 홈페이지를 제작한 프로젝트입니다. 리엑트를 기반으로 제작하였으며, 조금 심심할 수 있는 홈페이지에 스크롤 작동시 반응하는 애니메이션 이벤트를 활용하여 조금 다이나믹 하게 꾸며 보았습니다. PC, Mobile, Tablet 등 다양한 기기에서 접속해도 최소한의 가독성을 제공할 수 있도록 반응형 요소를 추가하였습니다. 다양한 기기에서 홈페이지를 확인해 보거나, 브라우저의 개발자 도구에서 다양한 해상도를 설정하여 홈페이지를 확인해주시면 감사하겠습니다. ",
       "gitUrl": "https://github.com/TaeminChoe/TaeminChoe.github.io",
       "link": "https://taeminchoe.github.io/",
       "functions": ["React 컴포넌트 설계", "커스텀 hooks", "styled-components"],

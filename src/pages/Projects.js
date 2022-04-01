@@ -19,6 +19,7 @@ const Container = styled.div`
 
 const Projects = ({ innerRef }) => {
   const { projects } = data;
+
   return (
     <Container
       ref={(el) => {

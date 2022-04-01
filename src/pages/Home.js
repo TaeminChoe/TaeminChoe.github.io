@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: url("imgs/Home.jpg");
+  background-image: url("imgs/Home.png");
   background-size: cover;
   opacity: 0.8;
   margin-top: 10vh;
@@ -15,8 +15,7 @@ const Container = styled.div`
   h1 {
     font-size: 4rem;
     margin-bottom: 10px;
-    font-family: sans-serif !important;
-    font-weight: 600 !important;
+    font-family: "IBM Plex Sans KR", sans-serif !important;
   }
   h2 {
     font-size: 3rem;
@@ -51,7 +50,6 @@ const Content = styled.p`
 
   @media screen and (max-width: 549px) {
     font-size: 1rem;
-    color: black;
   }
 `;
 

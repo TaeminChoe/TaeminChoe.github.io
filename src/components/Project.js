@@ -1,6 +1,8 @@
 import react from "react";
 import styled from "styled-components";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import ImageSlider from "./ImageSlider";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const Container = styled.div`
   position: relative;
@@ -33,13 +35,14 @@ const Container = styled.div`
 
   .contents {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
     .img {
       width: 90%;
-      /* margin: 0 50px; */
+      height: 500px;
     }
 
     .description {
@@ -95,12 +98,20 @@ const Project = ({ projectInfo }) => {
     keywords,
     link,
   } = projectInfo;
+  const animatedItem = useScrollFadeIn("right");
 
   return (
-    <Container>
+    <Container {...animatedItem}>
       <h2>{title}</h2>
       <div className="contents">
         <div className="img">
+          {/* <SimpleImageSlider
+            width={"80%"}
+            height={"300px"}
+            images={src}
+            showBullets
+            showNavs
+          /> */}
           <ImageSlider show={1} imgs={src} />
         </div>
         <div className="description">
