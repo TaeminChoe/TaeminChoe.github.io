@@ -53,7 +53,7 @@ function App() {
       <AboutMe innerRef={scroll} />
       <Skills innerRef={scroll} />
       <Projects innerRef={scroll} />
-      <Career innerRef={scroll} />
+      {/* <Career innerRef={scroll} /> */}
       <Footer />
     </AppContainer>
   );

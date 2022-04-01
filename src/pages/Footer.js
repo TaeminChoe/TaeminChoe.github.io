@@ -2,7 +2,8 @@ import react from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-color: white;
+  background-color: #eeeeee;
+  /* background-color: white; */
   color: black;
   h6 {
     margin-bottom: 50px;
