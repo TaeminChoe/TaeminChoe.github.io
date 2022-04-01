@@ -120,40 +120,34 @@
       "title": "Front End",
       "keywords": [
         {
-          "name": "HTML",
-          "src": "imgs/skills/HTML.png",
+          "name": "HTML&CSS",
+          "src": "imgs/skills/HTML&CSS.png",
           "score": 4,
           "id": 1
-        },
-        {
-          "name": "CSS",
-          "src": "imgs/skills/CSS.png",
-          "score": 3.5,
-          "id": 2
         },
         {
           "name": "JavaScript",
           "src": "imgs/skills/JavaScript.png",
           "score": 4,
-          "id": 3
+          "id": 2
         },
         {
           "name": "TypeScript",
           "src": "imgs/skills/TypeScript.png",
           "score": 3,
-          "id": 4
+          "id": 3
         },
         {
           "name": "React",
           "src": "imgs/skills/React.png",
-          "score": 4,
-          "id": 5
+          "score": 3.5,
+          "id": 4
         },
         {
           "name": "Scss",
           "src": "imgs/skills/Scss.png",
           "score": 3,
-          "id": 6
+          "id": 5
         }
       ]
     },
