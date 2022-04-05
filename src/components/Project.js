@@ -9,7 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   color: black;
-  background-color: #e6e7d9;
+  background-color: #cce9f9;
   /* border: 5px solid black; */
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgba(68, 68, 68, 0.2);
@@ -38,10 +38,11 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 2rem;
 
     .img {
       width: 90%;
-      height: 500px;
+      /* height: 500px; */
     }
 
     .description {

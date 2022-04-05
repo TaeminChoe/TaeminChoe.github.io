@@ -20,6 +20,10 @@ const Contents = styled.div`
   white-space: nowrap;
   transition: transform 500ms;
 
+  img {
+    border-radius: 10px;
+  }
+
   img:hover {
     transform: scale(1.08);
   }

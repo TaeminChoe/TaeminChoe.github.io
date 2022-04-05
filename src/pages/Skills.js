@@ -15,6 +15,8 @@ const Container = styled.div`
 const Title = styled.h2`
   width: 100%;
   color: black;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 300;
 
   @media screen and (max-width: 360px) {
     font-size: 0.7rem;
