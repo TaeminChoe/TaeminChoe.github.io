@@ -19,6 +19,8 @@ const Contents = styled.div`
   height: 100%;
   white-space: nowrap;
   transition: transform 500ms;
+  display: flex;
+  align-items: center;
 
   img {
     border-radius: 10px;

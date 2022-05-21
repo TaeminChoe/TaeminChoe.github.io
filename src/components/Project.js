@@ -43,6 +43,9 @@ const Container = styled.div`
     .img {
       width: 90%;
       /* height: 500px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .description {
