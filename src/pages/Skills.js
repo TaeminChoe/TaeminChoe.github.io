@@ -1,4 +1,3 @@
-import react, { useState } from "react";
 import styled from "styled-components";
 import Skill from "../components/Skill";
 import data from "../db/data.json";

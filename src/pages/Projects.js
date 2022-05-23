@@ -1,4 +1,3 @@
-import react from "react";
 import styled from "styled-components";
 import Project from "../components/Project";
 import data from "../db/data.json";

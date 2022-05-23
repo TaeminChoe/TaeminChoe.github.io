@@ -40,10 +40,6 @@ const Container = styled.div`
   }
 `;
 
-const Logo = styled.h1`
-  font-size: 100px !important;
-`;
-
 const Content = styled.p`
   font-size: 1.5rem;
   font-weight: 600;

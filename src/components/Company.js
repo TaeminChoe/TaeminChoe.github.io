@@ -1,4 +1,3 @@
-import react from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
@@ -74,7 +73,7 @@ const Company = ({ carrierInfo }) => {
   return (
     <Container {...animatedItem}>
       <Logo>
-        <img src={logoSrc} />
+        <img src={logoSrc} alt={"회사 로고"} />
       </Logo>
       <div className="detail">
         <Title>

@@ -81,7 +81,7 @@ const Header = ({ scrollMove }) => {
     <Container>
       <article>
         <Logo id="0" onClick={handleOnClick}>
-          <img src="imgs/Logo.png" />
+          <img src="imgs/Logo.png" alt="로고" />
         </Logo>
         <Menu>
           <li id="0" onClick={handleOnClick}>
@@ -102,8 +102,12 @@ const Header = ({ scrollMove }) => {
         </Menu>
         <Icons>
           <li>
-            <a target="_blank" href="https://github.com/TaeminChoe">
-              <img src="imgs/Git.png" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/TaeminChoe"
+            >
+              <img src="imgs/Git.png" alt="GitHub" />
             </a>
           </li>
         </Icons>

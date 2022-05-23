@@ -1,4 +1,3 @@
-import react from "react";
 import styled from "styled-components";
 import Card from "../components/Card";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
@@ -34,7 +33,7 @@ const Contents = styled.div`
 
 const AboutMe = ({ innerRef }) => {
   const animatedItem = useScrollFadeIn();
-  const { cards, introduces } = data.info;
+  const { cards } = data.info;
 
   return (
     <Container

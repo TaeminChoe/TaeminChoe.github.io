@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import StarPoint from "./StarPoint";
 
 const Keyword = styled.div`
@@ -35,6 +34,7 @@ const Skill = ({ imgSrc = "", score = 0 }) => {
         src={imgSrc}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOver}
+        alt="stack"
       />
       {score ? (
         <StarPoint

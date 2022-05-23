@@ -1,4 +1,3 @@
-import react from "react";
 import styled from "styled-components";
 import Company from "../components/Company";
 import data from "../db/data.json";

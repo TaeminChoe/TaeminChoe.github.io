@@ -104,7 +104,9 @@ export default function ImageSlider({ show = 4, imgs = data.color }) {
       <Wrapper>
         <Contents style={trans}>
           {imgs.map((img, idx) => {
-            return <img key={idx} src={img} style={imgSpec} />;
+            return (
+              <img key={idx} src={img} style={imgSpec} alt={`slider-${idx}`} />
+            );
           })}
         </Contents>
       </Wrapper>

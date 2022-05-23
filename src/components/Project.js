@@ -1,4 +1,3 @@
-import react from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import ImageSlider from "./ImageSlider";
@@ -91,16 +90,8 @@ const Container = styled.div`
 `;
 
 const Project = ({ projectInfo }) => {
-  const {
-    title,
-    src,
-    subTitle,
-    description,
-    gitUrl,
-    functions,
-    keywords,
-    link,
-  } = projectInfo;
+  const { title, src, description, gitUrl, functions, keywords, link } =
+    projectInfo;
   const animatedItem = useScrollFadeIn("right");
 
   return (
@@ -113,7 +104,7 @@ const Project = ({ projectInfo }) => {
         <div className="description">
           <div className="detail">
             <p>{description}</p>
-            <a href={gitUrl} target="_blank">
+            <a href={gitUrl} target="_blank" rel="noopener noreferrer">
               <span> 자세히 보기... </span>
             </a>
           </div>
@@ -122,8 +113,8 @@ const Project = ({ projectInfo }) => {
               <li>주요 기능 : {functions.map((value) => value).join(", ")}</li>
               <li>
                 link :{" "}
-                <a target="_blank" href={link}>
-                  https://taeminchoe.github.io/
+                <a target="_blank" href={link} rel="noopener noreferrer">
+                  {link}
                 </a>
               </li>
               <li>keywords : {keywords.map((value) => value).join(", ")}</li>
