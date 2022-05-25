@@ -1,5 +1,7 @@
 # Taemin's Portfolio
 
+https://taeminchoe.github.io/
+
 ## 주요 기능
 
 ## Scroll Event
